@@ -1,3 +1,5 @@
+CODING:
+
 age_intervals <- list(c(1,5), c(5,15), c(15,20), c(20,50), c(50,80), c(80,110))
 frequencies <- c(200, 450, 300, 1500, 700, 44)
 cum_frequencies <- cumsum(frequencies)
@@ -10,3 +12,6 @@ f <- frequencies[median_class_index]   Frequency of median class
 h <- age_intervals[[median_class_index]][2] - age_intervals[[median_class_index]][1]   Class width
 median_value <- L + ((N_half - F) / f) * h
 print(paste("Approximate Median:", median_value))
+
+OUTPUT:
+[1] "Approximate Median Value: 32.94"
